@@ -1,0 +1,57 @@
+/* تنسيق عام للصفحة */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 20px 0;
+    color: #2c3e50;
+}
+
+/* الحاوية الرئيسية للأعمال */
+.tasks-container {
+    display: flex;
+    flex-wrap: wrap; /* يجعلها متجاوبة مع الشاشات الصغيرة */
+    gap: 20px; /* مسافة بين الصناديق */
+    justify-content: center; /* محاذاة العناصر في المنتصف */
+    padding: 20px;
+}
+
+/* تصميم كل صندوق */
+.task-box {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 250px; /* عرض الصناديق */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: right;
+}
+
+.task-box h3 {
+    color: #16a085;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* تصميم القائمة */
+.task-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.task-box li {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+/* تصميم أزرار التحديد */
+.task-box input[type="checkbox"] {
+    margin-left: 8px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
